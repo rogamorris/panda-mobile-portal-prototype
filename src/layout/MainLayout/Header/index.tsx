@@ -5,13 +5,13 @@ import { Avatar, Box, useMediaQuery } from '@mui/material';
 // project imports
 import useConfig from 'hooks/useConfig';
 import LogoSection from '../LogoSection';
-import SearchSection from './SearchSection';
+//import SearchSection from './SearchSection';
 import MobileSection from './MobileSection';
 import ProfileSection from './ProfileSection';
 import FullScreenSection from './FullScreenSection';
-import LocalizationSection from './LocalizationSection';
-import MegaMenuSection from './MegaMenuSection';
-import NotificationSection from './NotificationSection';
+//import LocalizationSection from './LocalizationSection';
+//import MegaMenuSection from './MegaMenuSection';
+//import NotificationSection from './NotificationSection';
 
 import { LAYOUT_CONST } from 'constant';
 import { useDispatch, useSelector } from 'store';
@@ -70,22 +70,22 @@ const Header = () => {
       </Box>
 
       {/* header search */}
-      <SearchSection />
+      {/* <SearchSection /> */}
       <Box sx={{ flexGrow: 1 }} />
       <Box sx={{ flexGrow: 1 }} />
 
       {/* mega-menu */}
       <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-        <MegaMenuSection />
+        {/* <MegaMenuSection /> */}
       </Box>
 
       {/* live customization & localization */}
       <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-        <LocalizationSection />
+        {/* <LocalizationSection /> */}
       </Box>
 
       {/* notification */}
-      <NotificationSection />
+      {/* <NotificationSection /> */}
 
       {/* full sceen toggler */}
       <Box sx={{ display: { xs: 'none', lg: 'block' } }}>
