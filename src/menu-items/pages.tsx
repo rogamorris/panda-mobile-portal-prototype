@@ -2,13 +2,14 @@
 import { FormattedMessage } from 'react-intl';
 
 // assets
-import { IconKey, IconBug } from '@tabler/icons-react';
+import { IconKey, IconBug, IconHome } from '@tabler/icons-react';
 import { NavItemType } from 'types';
 
 // constant
 const icons = {
   IconKey,
-  IconBug
+  IconBug,
+  IconHome
 };
 
 // ==============================|| EXTRA PAGES MENU ITEMS ||============================== //
@@ -24,7 +25,7 @@ const pages: NavItemType = {
       id: 'maintenance',
       title: <FormattedMessage id="maintenance" />,
       type: 'collapse',
-      icon: icons.IconBug,
+      icon: icons.IconHome,
       children: [
         {
           id: 'error',
