@@ -31,14 +31,14 @@ import PerfectScrollbar from 'react-perfect-scrollbar';
 // project imports
 import MainCard from 'ui-component/cards/MainCard';
 import Transitions from 'ui-component/extended/Transitions';
-import UpgradePlanCard from './UpgradePlanCard';
+//import UpgradePlanCard from './UpgradePlanCard';
 import useAuth from 'hooks/useAuth';
 
 // assets
 import { IconLogout, IconSearch, IconSettings, IconUser } from '@tabler/icons-react';
 import useConfig from 'hooks/useConfig';
 
-const User1 = '/assets/images/users/user-round.svg';
+//const User1 = '/assets/images/users/user-round.svg'; 
 
 // ==============================|| PROFILE MENU ||============================== //
 
@@ -116,7 +116,7 @@ const ProfileSection = () => {
             lineHeight: 0
           }
         }}
-        icon={
+        /* icon={
           <Avatar
             src={User1}
             sx={{
@@ -130,7 +130,7 @@ const ProfileSection = () => {
             color="inherit"
             alt="user images"
           />
-        }
+        } */
         label={<IconSettings stroke={1.5} size="24px" color={theme.palette.primary.main} />}
         variant="outlined"
         ref={anchorRef}
@@ -164,14 +164,10 @@ const ProfileSection = () => {
                     <Box sx={{ p: 2, pb: 0 }}>
                       <Stack>
                         <Stack direction="row" spacing={0.5} alignItems="center">
-                          <Typography variant="h4">Good Morning,</Typography>
-                          <Typography component="span" variant="h4" sx={{ fontWeight: 400 }}>
-                            {user?.name}
-                          </Typography>
+                          <Typography variant="h4">Settings</Typography>
                         </Stack>
-                        <Typography variant="subtitle2">Project Admin</Typography>
                       </Stack>
-                      <OutlinedInput
+                       {/* <OutlinedInput
                         sx={{ width: '100%', pr: 1, pl: 2, my: 2 }}
                         id="input-search-profile"
                         value={value}
@@ -186,14 +182,14 @@ const ProfileSection = () => {
                         inputProps={{
                           'aria-label': 'weight'
                         }}
-                      />
+                      /> */}
                       <Divider />
                     </Box>
                     <PerfectScrollbar style={{ height: '100%', maxHeight: 'calc(100vh - 250px)', overflowX: 'hidden' }}>
                       <Box sx={{ p: 2, pt: 0 }}>
-                        <UpgradePlanCard />
-                        <Divider />
-                        <Card
+                        {/* <UpgradePlanCard /> */}
+                         {/* <Divider /> */}
+                        {/* <Card
                           sx={{
                             bgcolor: theme.palette.mode === 'dark' ? theme.palette.dark[800] : theme.palette.primary.light,
                             my: 2
@@ -234,8 +230,8 @@ const ProfileSection = () => {
                               </Grid>
                             </Grid>
                           </CardContent>
-                        </Card>
-                        <Divider />
+                        </Card> */}
+                        {/* <Divider /> */}
                         <List
                           component="nav"
                           sx={{
@@ -252,7 +248,7 @@ const ProfileSection = () => {
                             }
                           }}
                         >
-                          <ListItemButton
+                          {/* <ListItemButton
                             sx={{ borderRadius: `${borderRadius}px` }}
                             selected={selectedIndex === 0}
                             onClick={(event: React.MouseEvent<HTMLDivElement>) =>
@@ -269,8 +265,8 @@ const ProfileSection = () => {
                                 </Typography>
                               }
                             />
-                          </ListItemButton>
-                          <ListItemButton
+                          </ListItemButton> */}
+                          {/* <ListItemButton
                             sx={{ borderRadius: `${borderRadius}px` }}
                             selected={selectedIndex === 1}
                             onClick={(event: React.MouseEvent<HTMLDivElement>) =>
@@ -294,7 +290,7 @@ const ProfileSection = () => {
                                 </Grid>
                               }
                             />
-                          </ListItemButton>
+                            </ListItemButton> */}
                           <ListItemButton sx={{ borderRadius: `${borderRadius}px` }} selected={selectedIndex === 4} onClick={handleLogout}>
                             <ListItemIcon>
                               <IconLogout stroke={1.5} size="20px" />
